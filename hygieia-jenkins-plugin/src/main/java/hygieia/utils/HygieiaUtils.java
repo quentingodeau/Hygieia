@@ -141,7 +141,7 @@ public class HygieiaUtils {
     }
 
     public static String getJobName(Run<?, ?> run) {
-        return run.getParent().getDisplayName();
+        return run.getParent().getFullDisplayName();
     }
 
 
