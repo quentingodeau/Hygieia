@@ -24,16 +24,22 @@
 
         // public variables
         var dashboardTemplate = dashboard.template.toLowerCase();
-        if (dashboardTemplate == 'capone' || dashboardTemplate == 'product-dashboard' || dashboardTemplate == 'caponechatops' || dashboardTemplate == 'cloud' ||
-            dashboardTemplate == 'splitview') {
+        if (
+            dashboardTemplate == 'capone' || 
+            dashboardTemplate == 'product-dashboard' || 
+            dashboardTemplate == 'caponechatops' || 
+            dashboardTemplate == 'cloud' ||
+            dashboardTemplate == 'splitview' ||
+            dashboardTemplate == 'simpleview'
+        ) {
             ctrl.templateUrl = 'components/templates/' + dashboardTemplate + '.html';
         }
         else if(dashboardTemplate == 'widgets') {
             ctrl.templateUrl = 'components/templates/widgetsTemplate.html';
         } else {
                 ctrl.templateUrl = 'components/templates/customTemplate.html';
-            }
-            dashboard.title = dashboardService.getDashboardTitle(dashboard);
+        }
+        dashboard.title = dashboardService.getDashboardTitle(dashboard);
         ctrl.dashboard = dashboard;
         console.log('Dashboard', dashboard);
     }

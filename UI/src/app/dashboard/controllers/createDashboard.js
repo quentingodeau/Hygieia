@@ -25,6 +25,7 @@
 
         // TODO: dynamically register templates with script
         ctrl.templates = [
+            {value: 'simpleview', name: 'Simple view', type: DashboardType.TEAM},
             {value: 'capone', name: 'Cap One', type: DashboardType.TEAM},
             {value: 'caponechatops', name: 'Cap One ChatOps', type: DashboardType.TEAM},
             {value: 'cloud', name: 'Cloud Dashboard', type: DashboardType.TEAM},
